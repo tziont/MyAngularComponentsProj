@@ -5,15 +5,17 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule } from '@angular/material';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { MenudemoComponent } from './menudemo/menudemo.component';
+import { MatMenuModule, MatButtonModule, MatCardModule } from '@angular/material';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    MenudemoComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,7 +24,10 @@ import { MatIconModule } from '@angular/material/icon';
     BrowserAnimationsModule,
     MatButtonModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatCardModule
    
   ],
   providers: [],
