@@ -8,7 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MenudemoComponent } from './menudemo/menudemo.component';
-import { MatMenuModule, MatButtonModule, MatCardModule } from '@angular/material';
+import { MatMenuModule, MatButtonModule, MatCardModule, MatSidenavModule } from '@angular/material';
+import { SidnavdemoComponent } from './sidnavdemo/sidnavdemo.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { MatMenuModule, MatButtonModule, MatCardModule } from '@angular/material
     AppComponent,
     HeaderComponent,
     MenudemoComponent,
+    SidnavdemoComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,8 @@ import { MatMenuModule, MatButtonModule, MatCardModule } from '@angular/material
     MatIconModule,
     MatMenuModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatSidenavModule
    
   ],
   providers: [],
