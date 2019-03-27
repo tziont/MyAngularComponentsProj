@@ -11,7 +11,9 @@ import { MenudemoComponent } from './menudemo/menudemo.component';
 import { MatMenuModule, MatButtonModule, MatCardModule, MatSidenavModule, MatListModule } from '@angular/material';
 import { SidnavdemoComponent } from './sidnavdemo/sidnavdemo.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
+import { TestpageComponent } from './testpage/testpage.component';
 import { LayoutModule } from '@angular/cdk/layout';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -21,6 +23,7 @@ import { LayoutModule } from '@angular/cdk/layout';
     MenudemoComponent,
     SidnavdemoComponent,
     MainNavComponent,
+    TestpageComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatCardModule,
     MatSidenavModule,
     LayoutModule,
-    MatListModule
+    MatListModule,
+    AppRoutingModule
    
   ],
   providers: [],
