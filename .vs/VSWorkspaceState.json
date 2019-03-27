@@ -1,13 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\e2e\\src",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\header",
     "\\src\\app\\main-nav",
-    "\\src\\app\\sidnavdemo"
+    "\\src\\app\\testpage"
   ],
-  "SelectedNode": "\\src",
+  "SelectedNode": "\\src\\app\\main-nav\\main-nav.component.html",
   "PreviewInSolutionExplorer": false
 }
