@@ -11,7 +11,14 @@ import { MenudemoComponent } from './menudemo/menudemo.component';
 import { MatMenuModule, MatButtonModule, MatCardModule, MatSidenavModule, MatListModule } from '@angular/material';
 import { SidnavdemoComponent } from './sidnavdemo/sidnavdemo.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
-import { TestpageComponent } from './testpage/testpage.component';
+import { IntropageComponent } from './pages/intro/intropage.component';
+import { LayoutpageComponent } from './pages/layout/layoutpage.component';
+import { ComponentspageComponent } from './pages/basiccomponents/componentspage.component';
+import { ThemespageComponent } from './pages/themes/themespage.component';
+import { EupcomponentspageComponent } from './pages/eupcomponents/eupcomponentspage.component';
+import { PlaygroundpageComponent } from './pages/playground/playgroundpage.component';
+
+
 import { LayoutModule } from '@angular/cdk/layout';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -23,7 +30,12 @@ import { AppRoutingModule } from './app-routing.module';
     MenudemoComponent,
     SidnavdemoComponent,
     MainNavComponent,
-    TestpageComponent
+    LayoutpageComponent,
+    IntropageComponent,
+    ComponentspageComponent,
+    ThemespageComponent,
+    EupcomponentspageComponent,
+    PlaygroundpageComponent
   ],
   imports: [
     BrowserModule,
