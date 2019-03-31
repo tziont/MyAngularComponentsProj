@@ -1,0 +1,19 @@
+.grid-info{
+  font-size:16px;
+  font-weight:normal;
+}
+.parent-grid {
+
+ padding:0 20px 20px 20px;
+ border-radius:4px;
+ border:2px solid #ccc;
+}
+
+mat-grid-tile-header h2{
+  font-size:18px;
+}
+
+  mat-grid-tile-header h2 span.grid-info {
+    font-size: 14px;
+    font-weight: normal;
+  }

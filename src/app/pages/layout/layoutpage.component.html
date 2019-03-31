@@ -1,15 +1,33 @@
 
-
-
   <div>
     <h1>Material Design layouts</h1>
-    <h2>Material Design layouts encourage consistency across platforms, environments, and screen sizes by using uniform elements and spacing.</h2>
+    <p>
+      Material Design layouts encourage consistency across platforms, environments, and screen sizes by using uniform elements and spacing.
+    </p>
+    <h2>Grid list</h2>
   </div>
-  <mat-grid-list cols="5" rowHeight="100px" gutterSize="0.5em">
+  <mat-grid-list class="parent-grid" cols="1" gutterSize="0.5em">
+    <div>
+      <h2>&lt; mat-grid-list <span class="grid-info">cols="1" gutterSize="0.5em"</span> &gt;</h2>
+      <mat-grid-list cols="5" rowHeight="200px" gutterSize="0.5em">
+        <mat-grid-tile colspan="4" style="background: #dcb29b">
+          <mat-grid-tile-header>
+           <h2> &lt;mat-grid-tile <span class="grid-info"> colspan="4"</span> &gt;</h2>
+          </mat-grid-tile-header>1
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="2" style="background: #aad5e8">
+          <mat-grid-tile-header>
+            <h2> &lt;mat-grid-tile <span class="grid-info">colspan="1" rowspan="2"</span> &gt;</h2>
+          </mat-grid-tile-header>2</mat-grid-tile>
+        <mat-grid-tile colspan="3" style="background: #e0d785">
+          <mat-grid-tile-header>
+            <h2> &lt;mat-grid-tile <span class="grid-info">colspan="3"</span> &gt;</h2>
+          </mat-grid-tile-header>3</mat-grid-tile>
+        <mat-grid-tile colspan="1" style="background: #c3e085">
+          <mat-grid-tile-header>
+            <h2> &lt;mat-grid-tile <span class="grid-info">colspan="1"</span> &gt;</h2>
+          </mat-grid-tile-header>4</mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </mat-grid-list>
 
-    <mat-grid-tile  colspan="4" style= "background: #999">1</mat-grid-tile>
-    <mat-grid-tile  colspan="1" rowspan="2" style= "background: #777">2</mat-grid-tile>
-    <mat-grid-tile  colspan="3" style= "background: #555">3</mat-grid-tile>
-    <mat-grid-tile   colspan="1"style= "background: #333">4</mat-grid-tile>
-
-</mat-grid-list>
