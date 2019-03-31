@@ -28,7 +28,7 @@
               },
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
-            ], 
+            ],
             "scripts": []
           },
           "configurations": {
@@ -130,5 +130,10 @@
       }
     }
   },
-  "defaultProject": "my-ng-app"
+  "defaultProject": "my-ng-app",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

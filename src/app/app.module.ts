@@ -8,7 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MenudemoComponent } from './menudemo/menudemo.component';
-import { MatMenuModule, MatButtonModule, MatCardModule, MatSidenavModule, MatListModule } from '@angular/material';
+import { MatMenuModule, MatButtonModule, MatCardModule, MatSidenavModule, MatListModule, MatGridListModule } from '@angular/material';
 import { SidnavdemoComponent } from './sidnavdemo/sidnavdemo.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { IntropageComponent } from './pages/intro/intropage.component';
@@ -17,8 +17,6 @@ import { ComponentspageComponent } from './pages/basiccomponents/componentspage.
 import { ThemespageComponent } from './pages/themes/themespage.component';
 import { EupcomponentspageComponent } from './pages/eupcomponents/eupcomponentspage.component';
 import { PlaygroundpageComponent } from './pages/playground/playgroundpage.component';
-
-
 import { LayoutModule } from '@angular/cdk/layout';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -47,11 +45,13 @@ import { AppRoutingModule } from './app-routing.module';
     MatIconModule,
     MatMenuModule,
     MatButtonModule,
+    MatGridListModule,
     MatCardModule,
     MatSidenavModule,
     LayoutModule,
     MatListModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
    
   ],
   providers: [],
