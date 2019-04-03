@@ -1,7 +1,9 @@
-.main-container {
+.outer-wrapper {
   display: flex;
   flex-direction: column;
   position: absolute;
+  z-index: -1;
+  padding:50px;
   top: 56px;
   bottom: 0;
   left: 0;

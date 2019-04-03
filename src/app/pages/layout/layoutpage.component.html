@@ -1,15 +1,55 @@
+<div>
+  <h1>Material Design layouts</h1>
+  <p>
+    Material Design layouts encourage consistency across platforms, environments, and screen sizes by using uniform elements and spacing.
+  </p>
 
+</div>
 
+  <h2>Grid list</h2>
+  <mat-card>
+    <mat-card-title>&lt; mat-grid-list <span class="grid-info">cols="1" gutterSize="0.5em"</span> &gt;</mat-card-title>
+    <mat-card-content>
+    <mat-grid-list cols="5" rowHeight="200px" gutterSize="0.5em">
+      <mat-grid-tile colspan="4" style="background: #dcb29b">
+        <mat-grid-tile-header>
+          <h2> &lt;mat-grid-tile <span class="grid-info"> colspan="4"</span> &gt;</h2>
+        </mat-grid-tile-header>1
+      </mat-grid-tile>
+      <mat-grid-tile colspan="1" rowspan="2" style="background: #aad5e8">
+        <mat-grid-tile-header>
+          <h2> &lt;mat-grid-tile <span class="grid-info">colspan="1" rowspan="2"</span> &gt;</h2>
+        </mat-grid-tile-header>2
+      </mat-grid-tile>
+      <mat-grid-tile colspan="3" style="background: #e0d785">
+        <mat-grid-tile-header>
+          <h2> &lt;mat-grid-tile <span class="grid-info">colspan="3"</span> &gt;</h2>
+        </mat-grid-tile-header>3
+      </mat-grid-tile>
+      <mat-grid-tile colspan="1" style="background: #c3e085">
+        <mat-grid-tile-header>
+          <h2> &lt;mat-grid-tile <span class="grid-info">colspan="1"</span> &gt;</h2>
+        </mat-grid-tile-header>4
+      </mat-grid-tile>
+    </mat-grid-list>
+    </mat-card-content>
+  </mat-card>
 
-  <div>
-    <h1>Material Design layouts</h1>
-    <h2>Material Design layouts encourage consistency across platforms, environments, and screen sizes by using uniform elements and spacing.</h2>
+<h2>Angular flex-layout</h2>
+<p>On its own, Angular Material can not provide a responsive design like bootstrap does.</p>
+<h5>Flex-layout is a package made for Angular to use CSS flex-box features, you just add directives in html tags to render it flexible and responsive.</h5>
+<mat-card>
+  <mat-card-title>&lt; div <span class="grid-info">fxLayout="row "</span> &gt;</mat-card-title>
+  <div class="flex-container" fxLayout="row wrap" fxLayout.md="column" fxLayoutAlign="">
+    <div class="blocks" fxFlex="15" fxFlexOrder.md="3" fxLayoutAlign=""><h3>Side nav</h3></div>
+    <div class="inner-wrapper" fxFlex fxLayout="column" fxLayout.md="column" fxLayoutAlign="">
+        <div class="blocks" fxFlex="15"><h3>Header</h3></div>
+        <div class="inner-wrapper" fxFlex fxLayout="row" fxLayout.md="column" fxLayoutAlign="">
+        <div class="blocks" fxFlex="50" ><h3>section </h3></div>
+        <div class="blocks" fxFlex="50" ><h3>section</h3></div>
+      </div>
+        <div class="blocks" fxFlex="15" ><h3>Footer</h3></div>
+    </div>
+    <div class="blocks" fxFlex="15" fxFlexOrder="2" ><h3>Aside</h3></div>
   </div>
-  <mat-grid-list cols="5" rowHeight="100px" gutterSize="0.5em">
-
-    <mat-grid-tile  colspan="4" style= "background: #999">1</mat-grid-tile>
-    <mat-grid-tile  colspan="1" rowspan="2" style= "background: #777">2</mat-grid-tile>
-    <mat-grid-tile  colspan="3" style= "background: #555">3</mat-grid-tile>
-    <mat-grid-tile   colspan="1"style= "background: #333">4</mat-grid-tile>
-
-</mat-grid-list>
+</mat-card>

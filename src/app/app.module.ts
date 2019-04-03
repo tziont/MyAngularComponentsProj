@@ -18,6 +18,7 @@ import { ThemespageComponent } from './pages/themes/themespage.component';
 import { EupcomponentspageComponent } from './pages/eupcomponents/eupcomponentspage.component';
 import { PlaygroundpageComponent } from './pages/playground/playgroundpage.component';
 import { LayoutModule } from '@angular/cdk/layout';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
 
 
@@ -51,6 +52,7 @@ import { AppRoutingModule } from './app-routing.module';
     LayoutModule,
     MatListModule,
     AppRoutingModule,
+    FlexLayoutModule
     
    
   ],

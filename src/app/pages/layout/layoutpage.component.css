@@ -1,0 +1,21 @@
+.blocks{
+    min-height:100px;
+}
+.flex-container{
+    height:500px;
+}
+.blocks:nth-child(1){
+    background:#dcb29b;
+}
+.blocks:nth-child(2){
+    background:#aad5e8;
+}
+.blocks:nth-child(3){
+    background:#e0d785;
+}
+.blocks:nth-child(4){
+    background:#c3e085;
+}
+.blocks:nth-child(5){
+    background:#e085b8;
+}
