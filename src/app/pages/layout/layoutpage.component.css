@@ -1,21 +1,32 @@
+h3{
+    color:#fff;
+    padding:10px;
+}
+
 .blocks{
-    min-height:100px;
+    min-height:50px;
 }
 .flex-container{
     height:500px;
 }
-.blocks:nth-child(1){
-    background:#dcb29b;
+.side-nav{
+    background:#e69264;
 }
-.blocks:nth-child(2){
-    background:#aad5e8;
+.header{
+    background:#64c2e6;
 }
-.blocks:nth-child(3){
-    background:#e0d785;
+.section1{
+    background:#90ee93;
 }
-.blocks:nth-child(4){
-    background:#c3e085;
+.section2{
+    background:#58a65b;
 }
-.blocks:nth-child(5){
-    background:#e085b8;
+.section3{
+    background:#c7eec8;
+}
+.aside{
+    background:#f6c127;
+}
+.footer{
+    background:#051f3b;
 }
