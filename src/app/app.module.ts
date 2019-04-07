@@ -7,19 +7,26 @@ import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatSelectModule} from '@angular/material/select';
 import { MenudemoComponent } from './menudemo/menudemo.component';
-import { MatMenuModule, MatButtonModule, MatCardModule, MatSidenavModule, MatListModule, MatGridListModule } from '@angular/material';
+import { MatMenuModule, MatButtonModule, MatCardModule, MatSidenavModule, MatListModule, MatGridListModule, MatDialogModule } from '@angular/material';
 import { SidnavdemoComponent } from './sidnavdemo/sidnavdemo.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { IntropageComponent } from './pages/intro/intropage.component';
 import { LayoutpageComponent } from './pages/layout/layoutpage.component';
-import { ComponentspageComponent } from './pages/basiccomponents/componentspage.component';
+import { ComponentspageComponent} from './pages/basiccomponents/componentspage.component';
 import { ThemespageComponent } from './pages/themes/themespage.component';
 import { EupcomponentspageComponent } from './pages/eupcomponents/eupcomponentspage.component';
 import { PlaygroundpageComponent } from './pages/playground/playgroundpage.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule} from '@angular/forms';
+import { ModalComponent } from './modal/modal.component';
+
+
 
 
 @NgModule({
@@ -34,7 +41,9 @@ import { AppRoutingModule } from './app-routing.module';
     ComponentspageComponent,
     ThemespageComponent,
     EupcomponentspageComponent,
-    PlaygroundpageComponent
+    PlaygroundpageComponent,
+    ModalComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -44,6 +53,9 @@ import { AppRoutingModule } from './app-routing.module';
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatTooltipModule,
     MatMenuModule,
     MatButtonModule,
     MatGridListModule,
@@ -51,12 +63,13 @@ import { AppRoutingModule } from './app-routing.module';
     MatSidenavModule,
     LayoutModule,
     MatListModule,
+    MatDialogModule,
     AppRoutingModule,
-    FlexLayoutModule
-    
-   
+    FlexLayoutModule,
+    ReactiveFormsModule
   ],
   providers: [],
+  entryComponents: [ModalComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
