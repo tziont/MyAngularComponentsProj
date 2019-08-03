@@ -12,7 +12,7 @@ export interface Animal {
 @Component({
   selector: 'app-testpage',
   templateUrl: './componentspage.component.html',
-  styleUrls: ['./componentspage.component.css']
+  styleUrls: ['./componentspage.component.scss']
 })
 
 export class ComponentspageComponent {

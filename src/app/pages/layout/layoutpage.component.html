@@ -1,4 +1,4 @@
-<div>
+<div class="main-header">
   <h1>Material Design layouts</h1>
   <p>
     Material Design layouts encourage consistency across platforms, environments, and screen sizes by using uniform elements and spacing.
@@ -7,7 +7,7 @@
 </div>
 
   <h2>Grid list</h2>
-  <mat-card>
+  <mat-card class="card">
     <mat-card-title>&lt; mat-grid-list <span class="grid-info">cols="1" gutterSize="0.5em"</span> &gt;</mat-card-title>
     <mat-card-content>
     <mat-grid-list cols="5" rowHeight="200px" gutterSize="0.5em">
@@ -37,17 +37,18 @@
 
 <h2>Angular flex-layout</h2>
 <p>On its own, Angular Material can not provide a responsive design like bootstrap does.</p>
-<h5>Flex-layout is a package made for Angular to use CSS flex-box features, you just add directives in html tags to render it flexible and responsivegit.</h5>
-<mat-card>
-  <mat-card-title>&lt; div <span class="grid-info">fxLayout="row "</span> &gt;</mat-card-title>
+<h5>Flex-layout is a package made for Angular to use CSS flex-box features, you just add directives in html tags to render it flexible and responsive.</h5>
+<p>Angular Flex Layout provides a sophisticated layout API using Flexbox CSS + mediaQuery. This module provides Angular developers with component layout features using a custom Layout API, mediaQuery observables, and injected DOM flexbox-2016 CSS stylings.</p>
+<mat-card class="card">
+  <mat-card-title>&lt; div <span class="grid-info">fxLayout="column"</span> &gt;</mat-card-title>
   <div class="flex-container" fxLayout="column">
     <div class="blocks header" fxFlex="15" fxFlexOrder="1"><h3>Header</h3></div>
     <div class="inner-wrapper" fxFlex fxLayout.gt-sm="row" fxLayout="column" fxFlexOrder="2">
         <div class="blocks section3" fxFlex fxShow.gt-sm="false" fxShow="true" fxFlexOrder.md="2" ><h3>section for small device</h3></div>
-        <div class="blocks side-nav" fxFlex="15"fxFlexOrder.md="2" fxShow.gt-xs="false"  fxShow.gt-md="true"><h3>Side nav</h3></div>
-        <div class="blocks section1" fxFlex fxFlex.gt-sm="50" fxFlexOrder.md="4"><h3>section </h3></div>
-        <div class="blocks section2" fxFlex fxFlex.gt-sm="50" fxFlexOrder.md="5" ><h3>section</h3></div>
-        <div class="blocks aside"  fxFlex fxFlex.gt-sm="15"fxFlexOrder="2" fxFlexOrder.md="3" ><h3>Aside</h3></div>
+        <div class="blocks side-nav" fxFlex="20"fxFlexOrder.md="2" fxShow.gt-xs="false"  fxShow.gt-md="true"><h3>Side nav</h3></div>
+        <div class="blocks section1" fxFlex fxFlex.gt-md="30" fxShow.lt-md="40" fxFlexOrder.md="4"><h3>section </h3></div>
+        <div class="blocks section2" fxFlex fxFlex.gt-md="30" fxShow.lt-md="40" fxFlexOrder.md="5" ><h3>section</h3></div>
+        <div class="blocks aside"  fxFlex fxFlex.gt-sm="20"fxFlexOrder="2" fxFlexOrder.md="3" ><h3>Aside</h3></div>
     </div>
     <div class="blocks footer" fxFlex="15" fxFlexOrder="3"><h3>Footer</h3></div>
   </div>

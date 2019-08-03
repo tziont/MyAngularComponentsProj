@@ -1,14 +1,13 @@
-<div>
+<div class="main-header">
     <h1>Material Components</h1>
     <p>
-        Material Design layouts encourage consistency across platforms, environments, and screen sizes by using uniform
-        elements and spacing.
+        Angular Material comprises a range of components which implement common interaction patterns according to the Material Design specification.
     </p>
-
 </div>
+<div class="test"><h2 class="test-chiled">test</h2></div>
 
 <h2>Mat Button</h2>
-<mat-card>
+<mat-card class="card">
     <button mat-button class="md-spacing">Mat button</button>
     <button mat-raised-button class="md-spacing">Mat button</button>
     <button mat-flat-button class="md-spacing">Mat button</button>
@@ -23,14 +22,14 @@
     </button>
 </mat-card>
 <h2>Mat radio button</h2>
-<mat-card>
+<mat-card class="card">
     <mat-radio-group aria-label="Select an option">
         <mat-radio-button class="md-spacing" value="1">Option 1</mat-radio-button>
         <mat-radio-button class="md-spacing" value="2">Option 2</mat-radio-button>
     </mat-radio-group>
 </mat-card>
 <h2>Mat select</h2>
-<mat-card>
+<mat-card class="card">
     <mat-form-field>
         <mat-label>Favorite animal</mat-label>
         <mat-select [formControl]="animalControl" required>
@@ -44,7 +43,7 @@
     </mat-form-field>
 </mat-card>
 <h2>Mat Tooltip</h2>
-<mat-card>
+<mat-card class="card">
     <button mat-raised-button matTooltip="Info about the action"
         aria-label="Button that displays a tooltip when focused or hovered over">
         Action

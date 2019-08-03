@@ -1,0 +1,17 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$eup-theme-primary: mat-palette($mat-blue,800);
+$eup-theme-accent: mat-palette($mat-green, A200, A100, A400);
+$eup-theme-warn: mat-palette($mat-red);
+$eup-theme: mat-light-theme($eup-theme-primary, $eup-theme-accent, $eup-theme-warn);
+@include angular-material-theme($eup-theme);
+
+$eup-alt-primary: mat-palette($mat-green,800);
+$eup-alt-accent: mat-palette($mat-amber, A200, A100, A400);
+$eup-alt-warn: mat-palette($mat-yellow);
+$eup-alt: mat-light-theme($eup-alt-primary, $eup-alt-accent, $eup-alt-warn);
+.alternative{
+    @include mat-radio-theme($eup-alt);
+}

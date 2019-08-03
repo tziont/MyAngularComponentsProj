@@ -1,3 +1,48 @@
 
-<h1>Themes arcitecture</h1>
-
+<div class="main-header">
+    <h1>Theming your custom component with Angular Material's theming system</h1>
+    <p>
+        In order to style your own components with Angular Material's tooling, the component's styles must be defined with Sass.
+    </p>
+    </div>
+    <h3>
+        1. Define all color and typography styles in a "theme file" for the component 
+    </h3>
+    <p>First, create a Sass mixin that accepts an Angular Material theme and outputs the color-specific styles for the component. An Angular Material theme definition is a Sass map.</p>
+    <p>For example, if building a custom carousel component:</p>
+<mat-card class="card">
+       
+<pre>
+    <code class="language-scss">
+<span class="hljs-comment">// Import library functions for theme creation.</span>
+@<span class="hljs-keyword">import</span> <span class="hljs-string">'~@angular/material/theming'</span>;
+               
+<span class="hljs-comment">// Define a mixin that accepts a theme and outputs the theme-specific styles.</span>
+@<span class="hljs-keyword">mixin</span> candy-carousel-theme(<span class="hljs-variable">$theme</span>)
+<span class="hljs-comment">// Extract the palettes you need from the theme definition.</span>
+<span class="hljs-variable">$primary</span>: map-get(<span class="hljs-variable">$theme</span>, primary);
+<span class="hljs-variable">$accent</span>: map-get(<span class="hljs-variable">$theme</span>, accent);
+                        
+<span class="hljs-comment">// Define any styles affected by the theme.</span>
+<span class="hljs-selector-class">.candy-carousel</span>
+<span class="hljs-comment">// Use mat-color to extract individual colors from a palette.</span>
+<span class="hljs-attribute">background-color</span>: mat-color(<span class="hljs-variable">$primary</span>);
+<span class="hljs-attribute">border-color</span>: mat-color(<span class="hljs-variable">$accent</span>, A400);
+                          
+   </code>
+</pre>
+</mat-card>
+<p>Second, create another Sass mixin that accepts an Angular Material typography definition and outputs typographic styles. For example:</p>
+<mat-card class="card">
+        <pre><code class="language-scss">@<span class="hljs-keyword">mixin</span> candy-carousel-typography(<span class="hljs-variable">$config</span>) 
+            <span class="hljs-selector-class">.candy-carousel</span>
+              <span class="hljs-attribute">font</span>:
+                family: mat-font-family(<span class="hljs-variable">$config</span>, body-<span class="hljs-number">1</span>);
+                size: mat-font-size(<span class="hljs-variable">$config</span>, body-<span class="hljs-number">1</span>);
+                weight: mat-font-weight(<span class="hljs-variable">$config</span>, body-<span class="hljs-number">1</span>);
+              
+           
+          </code></pre>
+</mat-card>
+<h3>2. Define all remaining styles in a normal component stylesheet.</h3>
+<p>Define all styles unaffected by the theme in a separate file referenced directly in the component's styleUrl. This generally includes everything except for color and typography styles.</p>
