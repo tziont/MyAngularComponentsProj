@@ -2,8 +2,8 @@
 
 @include mat-core();
 
-$eup-theme-primary: mat-palette($mat-blue,800);
-$eup-theme-accent: mat-palette($mat-green, A200, A100, A400);
+$eup-theme-primary: mat-palette($mat-blue,500);
+$eup-theme-accent: mat-palette($mat-blue, 800);
 $eup-theme-warn: mat-palette($mat-red);
 $eup-theme: mat-light-theme($eup-theme-primary, $eup-theme-accent, $eup-theme-warn);
 

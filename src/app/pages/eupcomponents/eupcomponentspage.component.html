@@ -6,22 +6,27 @@
 </div>
 <div class="alternative">
 
-<h2>Mat Button</h2>
+<h2>EUP Buttons</h2>
 <mat-card class="card">
-    <button mat-button class="md-spacing">Mat button</button>
-    <button mat-raised-button class="md-spacing">Mat button</button>
-    <button mat-flat-button class="md-spacing">Mat button</button>
-    <button mat-icon-button class="md-spacing">
-        <mat-icon>home</mat-icon>
-    </button>
-    <button mat-fab class="md-spacing">
-        <mat-icon>home</mat-icon>
-    </button>
-    <button mat-mini-fab class="md-spacing">
-        <mat-icon>home</mat-icon>
-    </button>
+
+    <div class="inner-card-wrapper">
+        <div class="item">
+            <eup-button  [buttonText]="'eup button'"></eup-button>
+        </div>
+        <div class="item">
+            <mat-radio-group  aria-label="Select an option">
+                <eup-radio-button [buttonText]="'eup radio 1'"></eup-radio-button>
+                <eup-radio-button [buttonText]="'eup radio 2'"></eup-radio-button>
+            </mat-radio-group>
+        </div>
+        <div class="item">
+            <eup-checkbox [buttonText]="'eup checkbox'"></eup-checkbox>
+        </div>
+    
+</div>
+
 </mat-card>
-<h2>Mat radio button</h2>
+<h2>EUP radio button</h2>
 
 <mat-card class="card">
     <mat-radio-group aria-label="Select an option">
@@ -30,7 +35,7 @@
     </mat-radio-group>
 </mat-card>
 
-<h2>Mat select</h2>
+<h2>EUP select</h2>
 <mat-card class="card">
     <mat-form-field>
         <mat-label>Favorite animal</mat-label>
@@ -44,7 +49,7 @@
         <mat-hint>{{animalControl.value?.sound}}</mat-hint>
     </mat-form-field>
 </mat-card>
-<h2>Mat Tooltip</h2>
+<h2>EUP Tooltip</h2>
 <mat-card class="card">
     <button mat-raised-button matTooltip="Info about the action"
         aria-label="Button that displays a tooltip when focused or hovered over">

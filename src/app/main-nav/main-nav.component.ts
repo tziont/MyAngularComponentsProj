@@ -10,6 +10,7 @@ import { map } from 'rxjs/operators';
 })
 export class MainNavComponent {
 imageUrl = "/assets/images/GitHub.png";
+materialLogo = "/assets/images/angular.png";
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches)
