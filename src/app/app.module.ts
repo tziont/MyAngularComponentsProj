@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -12,7 +11,16 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSelectModule} from '@angular/material/select';
 import { MenudemoComponent } from './menudemo/menudemo.component';
-import { MatMenuModule, MatButtonModule, MatCardModule, MatSidenavModule, MatListModule, MatGridListModule, MatDialogModule } from '@angular/material';
+import {
+  MatMenuModule,
+  MatButtonModule,
+  MatCardModule,
+  MatSidenavModule,
+  MatListModule,
+  MatGridListModule,
+  MatDialogModule
+} from '@angular/material';
+import {MatTableModule} from '@angular/material/table';
 import { SidnavdemoComponent } from './sidnavdemo/sidnavdemo.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { IntropageComponent } from './pages/intro/intropage.component';
@@ -26,13 +34,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule} from '@angular/forms';
 import { ModalComponent } from './modal/modal.component';
+import {RxService} from './services/RxService/rx.service';
+import {HttpClientModule} from '@angular/common/http';
 import { EupButtonComponent } from './eup-button/eup-button.component';
 import { EupRadioButtonComponent } from './eup-radio-button/eup-radio-button.component';
 import { EupCheckboxComponent } from './eup-checkbox/eup-checkbox.component';
-
-
-
-
 
 @NgModule({
   declarations: [
@@ -50,13 +56,12 @@ import { EupCheckboxComponent } from './eup-checkbox/eup-checkbox.component';
     ModalComponent,
     EupButtonComponent,
     EupRadioButtonComponent,
-    EupCheckboxComponent,
-    
+    EupCheckboxComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     MatButtonModule,
     MatToolbarModule,
@@ -66,18 +71,18 @@ import { EupCheckboxComponent } from './eup-checkbox/eup-checkbox.component';
     MatSelectModule,
     MatTooltipModule,
     MatMenuModule,
-    MatButtonModule,
     MatGridListModule,
     MatCardModule,
     MatSidenavModule,
     LayoutModule,
     MatListModule,
     MatDialogModule,
+    MatTableModule,
     AppRoutingModule,
     FlexLayoutModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [RxService],
   entryComponents: [ModalComponent],
   bootstrap: [AppComponent]
 })

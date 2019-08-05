@@ -1,0 +1,30 @@
+export interface IRx {
+  'id': number;
+  'doctorId': number;
+  'companyId': number;
+  'caseTypeDescription': string;
+  'caseTypeId': number;
+  'parallelWorkOrderId': number;
+  'lastDetailsId': number;
+  'guid': string;
+  'lastBowId': number;
+  'dateUpdated': string;
+  'dueDate': string;
+  'isOrthoOrder': boolean;
+  'itemId': number;
+  'deliveryDate': string;
+  'patientName': string;
+  'doctorName': string;
+  'status': string;
+  'canOpenFile': true,
+  'openFileLink': string;
+  'canSendToModeling': boolean;
+  'canSendToMilling': boolean;
+  'canEditRx': boolean;
+  'canReturnToDoctor': boolean;
+  'canExportFile': boolean;
+  'canOpenWithItero': boolean;
+  'canOpenWithOrthoCad': boolean;
+  'isOrderPrinted': boolean;
+  'toothNumberingSystem': number;
+}
