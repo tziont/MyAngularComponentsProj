@@ -2,15 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import {IRx} from '../../../interfaces/IRx';
 import {RxService} from '../../services/RxService/rx.service';
+import {IAnimal} from '../../../interfaces/IAnimal';
 
-export interface DialogData {
-  animal: string;
-  name: string;
-}
-export interface Animal {
-  name: string;
-  sound: string;
-}
 @Component({
   selector: 'app-testpage',
   templateUrl: './componentspage.component.html',
@@ -23,7 +16,7 @@ export class ComponentspageComponent implements OnInit {
 
   animalControl = new FormControl('', [Validators.required]);
 
-  animals: Animal[] = [
+  animals: IAnimal[] = [
     { name: 'Dog', sound: 'Woof!' },
     { name: 'Cat', sound: 'Meow!' },
     { name: 'Cow', sound: 'Moo!' },
