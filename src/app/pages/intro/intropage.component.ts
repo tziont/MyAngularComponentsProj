@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-intropage',
+  selector: 'intropage',
   templateUrl: './intropage.component.html',
   styleUrls: ['./intropage.component.scss']
 })

@@ -42,8 +42,7 @@ export class EupcomponentspageComponent implements OnInit {
     openDialog():void {
       const dialogRef = this.dialog.open(EupDialogContentComponent, {
         width:'600px',
-        height:'500px',
-        hasBackdrop: false,
+        hasBackdrop: true,
         panelClass: 'myClass'
       });
 

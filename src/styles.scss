@@ -8,5 +8,25 @@ label{
 table {
   width: 100%;
 }
-
+.myClass {
+  .mat-dialog-container{
+  position: relative;
+  mat-dialog-content{
+    margin:60px 0 20px 0 ;
+    max-height: 500px;
+    overflow: hidden;
+    overflow-y: auto
+  }
+  .mat-dialog-actions{
+    justify-content: flex-end;
+  }
+  .mat-toolbar {
+    .menu{
+      color: red;
+    }
+    
+  }
+  
+}
+}
 

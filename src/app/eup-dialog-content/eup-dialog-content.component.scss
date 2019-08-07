@@ -1,4 +1,15 @@
-.cancel{
-    background: red !important;
+
+eup-dialog-header{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    padding:0;
+}
+.eup-dialog-footer{
+    margin-bottom:17px;
+    .footer-item{
+        margin-left:10px;
+    }
 }
 

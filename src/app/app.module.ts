@@ -24,6 +24,7 @@ import {MatTableModule} from '@angular/material/table';
 import { SidnavdemoComponent } from './sidnavdemo/sidnavdemo.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { IntropageComponent } from './pages/intro/intropage.component';
+import { HomepageComponent } from './pages/home/homepage.component';
 import { LayoutpageComponent } from './pages/layout/layoutpage.component';
 import { ComponentspageComponent} from './pages/basiccomponents/componentspage.component';
 import { ThemespageComponent } from './pages/themes/themespage.component';
@@ -41,6 +42,9 @@ import { EupRadioButtonComponent } from './eup-radio-button/eup-radio-button.com
 import { EupCheckboxComponent } from './eup-checkbox/eup-checkbox.component';
 import { EupDialogContentComponent } from './eup-dialog-content/eup-dialog-content.component';
 import { EupCancelButtonComponent } from './eup-cancel-button/eup-cancel-button.component';
+import { EupDialogHeaderComponent } from './eup-dialog-content/eup-dialog-header/eup-dialog-header.component';
+
+
 
 @NgModule({
   declarations: [
@@ -51,6 +55,7 @@ import { EupCancelButtonComponent } from './eup-cancel-button/eup-cancel-button.
     MainNavComponent,
     LayoutpageComponent,
     IntropageComponent,
+    HomepageComponent,
     ComponentspageComponent,
     ThemespageComponent,
     EupcomponentspageComponent,
@@ -61,7 +66,10 @@ import { EupCancelButtonComponent } from './eup-cancel-button/eup-cancel-button.
     EupRadioButtonComponent,
     EupCheckboxComponent,
     EupDialogContentComponent,
-  ],
+    EupDialogHeaderComponent,
+    HomepageComponent,
+    
+    ],
   imports: [
     BrowserModule,
     FormsModule,

@@ -5,9 +5,11 @@ import { IntropageComponent } from './pages/intro/intropage.component';
 import { ComponentspageComponent } from './pages/basiccomponents/componentspage.component';
 import { ThemespageComponent } from './pages/themes/themespage.component';
 import { EupcomponentspageComponent } from './pages/eupcomponents/eupcomponentspage.component';
+import { HomepageComponent } from './pages/home/homepage.component';
 import { PlaygroundpageComponent } from './pages/playground/playgroundpage.component';
 
 const routes = [
+  { path: '', component: HomepageComponent },
   { path: 'layouts', component: LayoutpageComponent },
   { path: 'intro', component: IntropageComponent },
   { path: 'basic-components', component: ComponentspageComponent },
