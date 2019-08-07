@@ -1,12 +1,11 @@
-import { Component, Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'eup-button',
-  templateUrl: './eup-button.component.html',
-  styleUrls: ['./eup-button.component.scss']
+  selector: 'eup-cancel-button',
+  templateUrl: './eup-cancel-button.component.html',
+  styleUrls: ['./eup-cancel-button.component.scss']
 })
-export class EupButtonComponent {
-
+export class EupCancelButtonComponent implements OnInit {
   @Input()
   public style: any
 
@@ -22,5 +21,9 @@ export class EupButtonComponent {
   @Input()
 	public clickHandler: Function;
   
-  constructor() { }
+   constructor() { }
+
+  ngOnInit() {
+  }
+
 }

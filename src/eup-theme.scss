@@ -2,12 +2,20 @@
 
 @include mat-core();
 
-$eup-theme-primary: mat-palette($mat-blue,500);
-$eup-theme-accent: mat-palette($mat-blue, 800);
+$eup-theme-primary: mat-palette($mat-blue,800);
+$eup-theme-accent: mat-palette($mat-blue, 500);
 $eup-theme-warn: mat-palette($mat-red);
 $eup-theme: mat-light-theme($eup-theme-primary, $eup-theme-accent, $eup-theme-warn);
 
 .alternative{
-    @include angular-material-theme($eup-theme);;
+    @include angular-material-theme($eup-theme);
+}
+
+$checkbox-theme-primary: mat-palette($mat-blue,800);
+$checkbox-theme-accent: mat-palette($mat-blue,500);
+$checkbox-theme-warn: mat-palette($mat-red);
+$checkbox-theme: mat-light-theme($checkbox-theme-primary, $checkbox-theme-accent, $checkbox-theme-warn);
+.eup-checkbox{
+    @include angular-material-theme($checkbox-theme);
 }
 

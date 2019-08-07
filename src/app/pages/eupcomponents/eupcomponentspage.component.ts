@@ -5,6 +5,9 @@ import {MatTableDataSource} from '@angular/material/table';
 import {IRx} from '../../../interfaces/IRx';
 import {RxService} from '../../services/RxService/rx.service';
 import {IAnimal} from '../../../interfaces/IAnimal';
+import {MatDialog, MatDialogRef} from '@angular/material/dialog';
+import { EupDialogContentComponent } from '../../eup-dialog-content/eup-dialog-content.component';
+import { Content } from '@angular/compiler/src/render3/r3_ast';
 
 @Component({
   selector: 'app-testpage',
@@ -24,12 +27,30 @@ export class EupcomponentspageComponent implements OnInit {
     { name: 'Fox', sound: 'Wa-pa-pa-pa-pa-pa-pow!' }
   ];
 
+
+
   public displayedColumns: string[];
   public rxList: IRx[];
   public dataSource: MatTableDataSource<IRx>;
   public selection: SelectionModel<IRx>;
 
-  constructor(private rxService: RxService) {}
+  constructor(
+    private rxService: RxService,
+    public dialog: MatDialog,
+    ) {}
+
+    openDialog():void {
+      const dialogRef = this.dialog.open(EupDialogContentComponent, {
+        width:'600px',
+        height:'500px',
+        hasBackdrop: false,
+        panelClass: 'myClass'
+      });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 
   isAllSelected(): boolean {
     const numSelected: number = this.selection.selected.length;

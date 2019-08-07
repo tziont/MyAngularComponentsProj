@@ -18,7 +18,7 @@ import {
   MatSidenavModule,
   MatListModule,
   MatGridListModule,
-  MatDialogModule
+  MatDialogModule,
 } from '@angular/material';
 import {MatTableModule} from '@angular/material/table';
 import { SidnavdemoComponent } from './sidnavdemo/sidnavdemo.component';
@@ -39,6 +39,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { EupButtonComponent } from './eup-button/eup-button.component';
 import { EupRadioButtonComponent } from './eup-radio-button/eup-radio-button.component';
 import { EupCheckboxComponent } from './eup-checkbox/eup-checkbox.component';
+import { EupDialogContentComponent } from './eup-dialog-content/eup-dialog-content.component';
+import { EupCancelButtonComponent } from './eup-cancel-button/eup-cancel-button.component';
 
 @NgModule({
   declarations: [
@@ -55,8 +57,10 @@ import { EupCheckboxComponent } from './eup-checkbox/eup-checkbox.component';
     PlaygroundpageComponent,
     ModalComponent,
     EupButtonComponent,
+    EupCancelButtonComponent,
     EupRadioButtonComponent,
-    EupCheckboxComponent
+    EupCheckboxComponent,
+    EupDialogContentComponent,
   ],
   imports: [
     BrowserModule,
@@ -80,10 +84,13 @@ import { EupCheckboxComponent } from './eup-checkbox/eup-checkbox.component';
     MatTableModule,
     AppRoutingModule,
     FlexLayoutModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [RxService],
-  entryComponents: [ModalComponent],
+  entryComponents: [
+    ModalComponent,
+    EupDialogContentComponent,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
