@@ -12,7 +12,6 @@ export class DrDialogContentComponent implements OnInit {
   closeDialog = () => {
     this.dialogRef.close();
   }
-  
   ngOnInit() {
   }
 
