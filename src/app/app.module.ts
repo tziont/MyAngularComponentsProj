@@ -45,6 +45,7 @@ import { EupDialogHeaderComponent } from './eupcomponents/eup-dialog-content/eup
 import { DrDialogHeaderComponent } from './dreupcomponents/dr-dialog-content/dr-dialog-header/dr-dialog-header.component';
 import { DialogContentExampleDialogComponent } from './dialog-content-example-dialog/dialog-content-example-dialog.component';
 import { DrDialogContentComponent } from './dreupcomponents/dr-dialog-content/dr-dialog-content.component';
+import { DrDialogCloseButtonComponent } from './dreupcomponents/dr-dialog-content/dr-dialog-close-button/dr-dialog-close-button.component';
 
 
 
@@ -72,6 +73,7 @@ import { DrDialogContentComponent } from './dreupcomponents/dr-dialog-content/dr
     HomepageComponent,
     DialogContentExampleDialogComponent,
     DrDialogContentComponent,
+    DrDialogCloseButtonComponent,
     ],
   imports: [
     BrowserModule,
