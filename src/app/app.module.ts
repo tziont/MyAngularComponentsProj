@@ -49,6 +49,8 @@ import { DrDialogCloseButtonComponent } from './dreupcomponents/dr-dialog-conten
 
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -73,7 +75,7 @@ import { DrDialogCloseButtonComponent } from './dreupcomponents/dr-dialog-conten
     HomepageComponent,
     DialogContentExampleDialogComponent,
     DrDialogContentComponent,
-    DrDialogCloseButtonComponent,
+    DrDialogCloseButtonComponent
     ],
   imports: [
     BrowserModule,
@@ -97,7 +99,7 @@ import { DrDialogCloseButtonComponent } from './dreupcomponents/dr-dialog-conten
     MatTableModule,
     AppRoutingModule,
     FlexLayoutModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule
   ],
   providers: [RxService],
   entryComponents: [

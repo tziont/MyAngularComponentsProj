@@ -10,6 +10,9 @@ export class DrDialogHeaderComponent implements OnInit {
 @Input()
 public dialogTitle: string;
 
+@Input()
+public closeDialogHandler: Function;
+
   constructor() { }
 
   ngOnInit() {

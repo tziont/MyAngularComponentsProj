@@ -8,7 +8,8 @@ import {MatDialogRef} from '@angular/material/dialog';
 })
 export class DrDialogContentComponent implements OnInit {
 
-  constructor(public dialogRef:MatDialogRef<DrDialogContentComponent>) { }
+  constructor(public dialogRef: MatDialogRef<DrDialogContentComponent>) { }
+
   closeDialog = () => {
     this.dialogRef.close();
   }
