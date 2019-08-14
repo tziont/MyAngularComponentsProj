@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LayoutpageComponent } from './pages/layout/layoutpage.component';
-import { IntropageComponent } from './pages/intro/intropage.component';
-import { ComponentspageComponent } from './pages/basiccomponents/componentspage.component';
-import { ThemespageComponent } from './pages/themes/themespage.component';
-import { EupcomponentspageComponent } from './pages/eupcomponents/eupcomponentspage.component';
-import { HomepageComponent } from './pages/home/homepage.component';
-import { PlaygroundpageComponent } from './pages/playground/playgroundpage.component';
+import { LayoutpageComponent } from './pages/layoutpage/layoutpage.component';
+import { IntropageComponent } from './pages/intropage/intropage.component';
+import { ComponentspageComponent } from './pages/basiccomponentspage/componentspage.component';
+import { ThemespageComponent } from './pages/themespage/themespage.component';
+import { EupcomponentspageComponent } from './pages/eupcomponentspage/eupcomponentspage.component';
+import { DreupcomponentspageComponent } from './pages/dreupcomponentpage/dreupcomponentspage.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
+import { PlaygroundpageComponent } from './pages/playgroundpage/playgroundpage.component';
 
 const routes = [
   { path: '', component: HomepageComponent },
@@ -15,6 +16,7 @@ const routes = [
   { path: 'basic-components', component: ComponentspageComponent },
   { path: 'themes-arcitecture', component: ThemespageComponent },
   { path: 'eup-components', component: EupcomponentspageComponent },
+  { path: 'dr-eup-components', component: DreupcomponentspageComponent  },
   { path: 'playground', component: PlaygroundpageComponent }
 ]
 

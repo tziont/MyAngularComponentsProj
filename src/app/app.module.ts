@@ -10,7 +10,6 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSelectModule} from '@angular/material/select';
-import { MenudemoComponent } from './menudemo/menudemo.component';
 import {
   MatMenuModule,
   MatButtonModule,
@@ -23,26 +22,29 @@ import {
 import {MatTableModule} from '@angular/material/table';
 import { SidnavdemoComponent } from './sidnavdemo/sidnavdemo.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
-import { IntropageComponent } from './pages/intro/intropage.component';
-import { HomepageComponent } from './pages/home/homepage.component';
-import { LayoutpageComponent } from './pages/layout/layoutpage.component';
-import { ComponentspageComponent} from './pages/basiccomponents/componentspage.component';
-import { ThemespageComponent } from './pages/themes/themespage.component';
-import { EupcomponentspageComponent } from './pages/eupcomponents/eupcomponentspage.component';
-import { PlaygroundpageComponent } from './pages/playground/playgroundpage.component';
+import { IntropageComponent } from './pages/intropage/intropage.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
+import { LayoutpageComponent } from './pages/layoutpage/layoutpage.component';
+import { ComponentspageComponent} from './pages/basiccomponentspage/componentspage.component';
+import { ThemespageComponent } from './pages/themespage/themespage.component';
+import { EupcomponentspageComponent } from './pages/eupcomponentspage/eupcomponentspage.component';
+import { PlaygroundpageComponent } from './pages/playgroundpage/playgroundpage.component';
+import { DreupcomponentspageComponent } from './pages/dreupcomponentpage/dreupcomponentspage.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
-import { ReactiveFormsModule} from '@angular/forms';
-import { ModalComponent } from './modal/modal.component';
-import {RxService} from './services/RxService/rx.service';
-import {HttpClientModule} from '@angular/common/http';
-import { EupButtonComponent } from './eup-button/eup-button.component';
-import { EupRadioButtonComponent } from './eup-radio-button/eup-radio-button.component';
-import { EupCheckboxComponent } from './eup-checkbox/eup-checkbox.component';
-import { EupDialogContentComponent } from './eup-dialog-content/eup-dialog-content.component';
-import { EupCancelButtonComponent } from './eup-cancel-button/eup-cancel-button.component';
-import { EupDialogHeaderComponent } from './eup-dialog-content/eup-dialog-header/eup-dialog-header.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RxService } from './services/RxService/rx.service';
+import { HttpClientModule } from '@angular/common/http';
+import { EupButtonComponent } from './eupcomponents/eup-button/eup-button.component';
+import { EupRadioButtonComponent } from './eupcomponents/eup-radio-button/eup-radio-button.component';
+import { EupCheckboxComponent } from './eupcomponents/eup-checkbox/eup-checkbox.component';
+import { EupDialogContentComponent } from './eupcomponents/eup-dialog-content/eup-dialog-content.component';
+import { EupCancelButtonComponent } from './eupcomponents/eup-cancel-button/eup-cancel-button.component';
+import { EupDialogHeaderComponent } from './eupcomponents/eup-dialog-content/eup-dialog-header/eup-dialog-header.component';
+import { DrDialogHeaderComponent } from './dreupcomponents/dr-dialog-content/dr-dialog-header/dr-dialog-header.component';
+import { DialogContentExampleDialogComponent } from './dialog-content-example-dialog/dialog-content-example-dialog.component';
+import { DrDialogContentComponent } from './dreupcomponents/dr-dialog-content/dr-dialog-content.component';
 
 
 
@@ -50,7 +52,6 @@ import { EupDialogHeaderComponent } from './eup-dialog-content/eup-dialog-header
   declarations: [
     AppComponent,
     HeaderComponent,
-    MenudemoComponent,
     SidnavdemoComponent,
     MainNavComponent,
     LayoutpageComponent,
@@ -59,16 +60,18 @@ import { EupDialogHeaderComponent } from './eup-dialog-content/eup-dialog-header
     ComponentspageComponent,
     ThemespageComponent,
     EupcomponentspageComponent,
+    DreupcomponentspageComponent,
     PlaygroundpageComponent,
-    ModalComponent,
     EupButtonComponent,
     EupCancelButtonComponent,
     EupRadioButtonComponent,
     EupCheckboxComponent,
     EupDialogContentComponent,
     EupDialogHeaderComponent,
+    DrDialogHeaderComponent,
     HomepageComponent,
-    
+    DialogContentExampleDialogComponent,
+    DrDialogContentComponent,
     ],
   imports: [
     BrowserModule,
@@ -96,8 +99,9 @@ import { EupDialogHeaderComponent } from './eup-dialog-content/eup-dialog-header
   ],
   providers: [RxService],
   entryComponents: [
-    ModalComponent,
     EupDialogContentComponent,
+    DialogContentExampleDialogComponent,
+    DrDialogContentComponent,
   ],
   bootstrap: [AppComponent]
 })
