@@ -12,12 +12,12 @@ export class DrDialogCloseButtonComponent implements OnInit {
   ngOnInit() {
   }
   @Input()
-	public useHandler(handler: Function): void {
-		// If the handler needs its original context (this), the handler MUST be an arrow function
-		handler();
+  public useHandler(handler: Function): void {
+    // If the handler needs its original context (this), the handler MUST be an arrow function
+    handler();
   }
 
   @Input()
-	public clickHandler: Function;
+  public clickHandler: Function;
 
 }
