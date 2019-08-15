@@ -19,3 +19,11 @@ $checkbox-theme: mat-light-theme($checkbox-theme-primary, $checkbox-theme-accent
     @include angular-material-theme($checkbox-theme);
 }
 
+$drcheckbox-theme-primary: mat-palette($mat-blue,800);
+$drcheckbox-theme-accent: mat-palette($mat-grey,50);
+$drcheckbox-theme-warn: mat-palette($mat-red);
+$drcheckbox-theme: mat-light-theme($drcheckbox-theme-primary, $drcheckbox-theme-accent, $drcheckbox-theme-warn);
+.dr-checkbox{
+    @include angular-material-theme($drcheckbox-theme);
+}
+

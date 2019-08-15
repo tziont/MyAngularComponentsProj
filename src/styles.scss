@@ -4,6 +4,62 @@ body { margin: 0; font-family: 'Roboto', sans-serif; }
 label{
     margin-bottom: 0;
 }
+/* Avenir LT W01 65 Medium */
+@font-face {
+  font-family: "Avenir";
+  src: url("/../assets/fonts/212ab03d-5db2-4d6a-b94c-171cc702aa51.eot?#iefix");
+  src: url("/../assets/fonts/212ab03d-5db2-4d6a-b94c-171cc702aa51.eot?#iefix") format("eot"),
+  url("/../assets/fonts/e4d36745-a861-4a49-aa17-6510e67429d3.woff2") format("woff2"),
+  url("/../assets/fonts/2cac77ec-9bc0-4ee7-87e4-27650190744f.woff") format("woff"),
+  url("/../assets/fonts/aaf11848-aac2-4d09-9a9c-aac5ff7b8ff4.ttf") format("truetype"),
+  url("/../assets/fonts/294099f3-8d00-4676-afc5-5e9d8d43ad69.svg#294099f3-8d00-4676-afc5-5e9d8d43ad69") format("svg");
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* AvenirLTW01-65MediumObl */
+@font-face {
+  font-family: "Avenir";
+  src: url("/../assets/fonts/2a6f81a2-475c-4831-9949-33d7748ee561.eot?#iefix");
+  src: url("/../assets/fonts/2a6f81a2-475c-4831-9949-33d7748ee561.eot?#iefix") format("eot"),
+  url("/../assets/fonts/695a9fa5-9f57-4800-9993-3684d520f107.woff2") format("woff2"),
+  url("/../assets/fonts/e0af2f49-a399-482b-a54e-d745e268ec80.woff") format("woff"),
+  url("/../assets/fonts/6803d3dd-2107-45fc-ac8a-a4fa13771547.ttf") format("truetype"),
+  url("/../assets/fonts/1bb1acb5-8d4e-4800-88af-dbcf1fe96ef8.svg#1bb1acb5-8d4e-4800-88af-dbcf1fe96ef8") format("svg");
+
+  font-weight: 400;
+  font-style: oblique;
+}
+
+/* Avenir LT W01 85 Heavy */
+@font-face {
+  font-family: "Avenir";
+  src: url("/../assets/fonts/f61bf0f6-c193-4100-b940-12a1a01dcee5.eot?#iefix");
+  src: url("/../assets/fonts/f61bf0f6-c193-4100-b940-12a1a01dcee5.eot?#iefix") format("eot"),
+  url("/../assets/fonts/65cde95a-ac33-4c65-8198-e37857968d1a.woff2") format("woff2"),
+  url("/../assets/fonts/7147ec3a-8ff8-4ec9-8c5c-bd1571dc6ae6.woff") format("woff"),
+  url("/../assets/fonts/d1dc54b2-878d-4693-8d6e-b442e99fef68.ttf") format("truetype"),
+  url("/../assets/fonts/731dd4d3-64da-427d-ba61-01575b3cf3f7.svg#731dd4d3-64da-427d-ba61-01575b3cf3f7") format("svg");
+
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* AvenirLTW01-85HeavyObli */
+@font-face {
+  font-family: "Avenir";
+  src: url("/../assets/fonts/7be0fdec-384a-42b5-ab27-c60a322cde7d.eot?#iefix");
+  src: url("/../assets/fonts/7be0fdec-384a-42b5-ab27-c60a322cde7d.eot?#iefix") format("eot"),
+  url("/../assets/fonts/67a2c8ef-54d4-4ab7-b60c-20fb619e97ab.woff2") format("woff2"),
+  url("/../assets/fonts/53554f6f-4b01-4815-87fe-82c49b8ba5a9.woff") format("woff"),
+  url("/../assets/fonts/28dfedaf-6372-45a1-8833-b3078dc56a21.ttf") format("truetype"),
+  url("/../assets/fonts/f747b6ee-4d13-4e45-815d-f33ac1b71d63.svg#f747b6ee-4d13-4e45-815d-f33ac1b71d63") format("svg");
+
+  font-weight: 700;
+  font-style: oblique;
+}
+
 
 table {
   width: 100%;
@@ -33,7 +89,37 @@ table {
 
 .myDrClass{
   .mat-dialog-container{
+    mat-dialog-content{
+     padding:20px 40px;
+    }
     border:1px solid black;
     background: #f4f4f5;
 }
+}
+
+.dr-checkbox{ 
+  .mat-checkbox-inner-container {
+    height: 22px;
+    width: 22px;
+}
+  .mat-checkbox-background {
+    border: 1px solid #757575;
+    .mat-checkbox-checkmark-path {
+      stroke: #10bce7 !important;
+      stroke-width: 4px;
+  }
+ 
+  }
+  .mat-checkbox-frame {
+    border-radius: 3px;
+    border-width: 1px;
+  }
+ 
+
+}
+
+.dr-checkbox .mat-checkbox-checked .mat-checkbox-checkmark {
+  opacity: 1;
+  left: 1px;
+  top: -2px;
 }

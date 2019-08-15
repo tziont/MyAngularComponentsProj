@@ -46,6 +46,7 @@ import { DrDialogHeaderComponent } from './dreupcomponents/dr-dialog-content/dr-
 import { DialogContentExampleDialogComponent } from './dialog-content-example-dialog/dialog-content-example-dialog.component';
 import { DrDialogContentComponent } from './dreupcomponents/dr-dialog-content/dr-dialog-content.component';
 import { DrDialogCloseButtonComponent } from './dreupcomponents/dr-dialog-content/dr-dialog-close-button/dr-dialog-close-button.component';
+import { DrCheckboxComponent } from './dreupcomponents/dr-checkbox/dr-checkbox.component';
 
 
 
@@ -75,7 +76,8 @@ import { DrDialogCloseButtonComponent } from './dreupcomponents/dr-dialog-conten
     HomepageComponent,
     DialogContentExampleDialogComponent,
     DrDialogContentComponent,
-    DrDialogCloseButtonComponent
+    DrDialogCloseButtonComponent,
+    DrCheckboxComponent
     ],
   imports: [
     BrowserModule,
