@@ -77,17 +77,14 @@ table {
   .mat-dialog-actions{
     justify-content: flex-end;
   }
-  .mat-toolbar {
-    .menu{
-      color: red;
-    }
-    
-  }
   
 }
 }
 
 .myDrClass{
+  .mat-dialog-actions{
+    justify-content: flex-end;
+  }
   .mat-dialog-container{
     mat-dialog-content{
      padding:20px 40px;
@@ -123,3 +120,4 @@ table {
   left: 1px;
   top: -2px;
 }
+

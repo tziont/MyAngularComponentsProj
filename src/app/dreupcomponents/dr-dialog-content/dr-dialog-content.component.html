@@ -9,7 +9,12 @@
 </mat-dialog-content>
 <div class="eup-dialog-footer">
   <mat-dialog-actions>
-
+      <div class="footer-item">
+          <dr-cancel-button  [buttonText]="'Cancel'" [clickHandler]="closeDialog" ></dr-cancel-button>
+        </div>
+        <div class="footer-item">
+          <dr-button  [buttonText]="'OK'" [clickHandler]="closeDialog"></dr-button>
+        </div>
    
   </mat-dialog-actions>
 </div>
